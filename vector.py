@@ -37,10 +37,13 @@ def kolinear_vector(x,y):#колінеарність векторів
         print(e)
 
 def norma_vector1 (x):
-
     return max (x)
+
+def norma_vector2 (x):
+    return sum (x)
 #    norma = sum([element ** 2 for element in x]) ** 0, 5  # другий спосіб
 #    return norma
+
 
 
 #def differ_vectors (v1, v2):
@@ -60,6 +63,7 @@ def norma_vector1 (x):
 #if __name__ == "__main__":
 x = [2, 7, 5]
 print(norma_vector1(x))
+print(norma_vector2(x))
 #   print(norma_vector(a))
 #    b = [1, 2]
 #    c = [1,0,-1]
