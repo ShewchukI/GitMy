@@ -2,13 +2,13 @@ def size_vector(x):
     return len (x)
 
 
-def norma_vector(x):
+#def norma_vector(x):
    # norma = 0     #перший спосіб
    # for element in x:
    #     norma += element**2
    # return (norma**1/2)
-   norma = sum ([element**2 for element in x])**0,5 #другий спосіб
-   return norma
+#   norma = sum ([element**2 for element in x])**0,5 #другий спосіб
+#   return norma
 
 def scalar_dob_vect(x,y):  #скалярний добуток векторів
     try:
@@ -35,12 +35,20 @@ def kolinear_vector(x,y):#колінеарність векторів
         return scalar_dob
     except AssertionError as e:
         print(e)
-def differ_vectors (v1, v2):
-    n = len (v1)
-    v = [ ]
-    for i in range (n):
-        v[i] = v1[i]-v2[i]
-    return v
+
+def norma_vector1 (x):
+
+    return max (x)
+#    norma = sum([element ** 2 for element in x]) ** 0, 5  # другий спосіб
+#    return norma
+
+
+#def differ_vectors (v1, v2):
+#    n = len (v1)
+#    v = [ ]
+#    for i in range (n):
+#        v[i] = v1[i]-v2[i]
+#    return v
 
 # a = [2, 2, 5]
 # print(norma_vector(a))
@@ -49,10 +57,11 @@ def differ_vectors (v1, v2):
 # print (scalar_dob_vect(a,b))
 # print(scalar_dob_vect(a, c))
 
-if __name__ == "__main__":
-    a = [2, 2, 5]
-    print(norma_vector(a))
-    b = [1, 2]
-    c = [1,0,-1]
-    print (scalar_dob_vect(a,b))
-    print(scalar_dob_vect(a, c))
+#if __name__ == "__main__":
+x = [2, 7, 5]
+print(norma_vector1(x))
+#   print(norma_vector(a))
+#    b = [1, 2]
+#    c = [1,0,-1]
+#    print (scalar_dob_vect(a,b))
+#    print(scalar_dob_vect(a, c))
